@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'material_components/appbar/appbar_demo.dart';
 import 'material_components/bottom_navigation_bar.dart';
 import 'material_components/bottom_tab_bar.dart';
+import 'material_components/drawer_demo.dart';
 
 class MaterialComponents extends StatelessWidget {
 
@@ -28,6 +29,12 @@ class MaterialComponents extends StatelessWidget {
             trailing: new Icon(Icons.arrow_forward),
             onTap: () {
               Navigator.of(context).push(new MaterialPageRoute(builder: (context) => new BottomTabBarDemo()));
+            }),
+        new ListTile(
+            title: new Text("Drawer", style: _biggerFont),
+            trailing: new Icon(Icons.arrow_forward),
+            onTap: () {
+              Navigator.of(context).push(new MaterialPageRoute(builder: (context) => new DrawerDemo()));
             }),
     ];
 
