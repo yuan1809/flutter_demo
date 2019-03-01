@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'dart:io';
+import 'package:flutter_demo/utils/assets_utils.dart';
 
 /**
  * DrawerDemo
@@ -50,7 +50,7 @@ class _DrawerChildState extends State<DrawerChild>{
 
   @override
   void initState() {
-    _imageProvider = new AssetImage("images/ic_avatar_default.png");
+    _imageProvider = new AssetImage(AssetsUtils.image("ic_avatar_default.png"));
     super.initState();
   }
 
@@ -80,7 +80,7 @@ class _DrawerChildState extends State<DrawerChild>{
         applicationName: "Flutter Demo",
         applicationVersion: "1.0",
         applicationIcon: new Image.asset(
-          "images/ic_launcher.png",
+          AssetsUtils.image("ic_launcher.png"),
           width: 64.0,
           height: 64.0,
         ),

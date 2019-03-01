@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'first_demo.dart';
-import 'material_components.dart';
+import 'package:flutter_demo/material_components/material_components.dart';
+import 'package:flutter_demo/layout/layout.dart';
+import 'package:flutter_demo/assets/assets.dart';
 
 void main() => runApp(new MyApp());
 
@@ -37,6 +39,18 @@ class DemoList extends StatelessWidget {
           onTap: () {
             Navigator.of(context).push(new MaterialPageRoute(builder: (context) => new MaterialComponents()));
           }),
+        new ListTile(
+            title: new Text("Layout", style: _biggerFont),
+            trailing: new Icon(Icons.arrow_forward),
+            onTap: () {
+              Navigator.of(context).push(new MaterialPageRoute(builder: (context) => new LayoutDemo()));
+            }),
+        new ListTile(
+            title: new Text("Assets", style: _biggerFont),
+            trailing: new Icon(Icons.arrow_forward),
+            onTap: () {
+              Navigator.of(context).push(new MaterialPageRoute(builder: (context) => new AssetsDemo()));
+            }),
     ];
 
 

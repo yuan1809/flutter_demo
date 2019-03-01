@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'material_components/appbar/appbar_demo.dart';
-import 'material_components/bottom_navigation_bar.dart';
-import 'material_components/bottom_tab_bar.dart';
-import 'material_components/drawer_demo.dart';
+import 'appbar/appbar_demo.dart';
+import 'bottom_navigation_bar.dart';
+import 'bottom_tab_bar.dart';
+import 'drawer_demo.dart';
 
 class MaterialComponents extends StatelessWidget {
 
