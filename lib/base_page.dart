@@ -21,7 +21,9 @@ abstract class BasePage extends StatelessWidget {
     );
   }
 
-  String getRouterName();
+  String getRouterName(){
+     return null;
+  }
   /**
    * 设置页面标题
    */

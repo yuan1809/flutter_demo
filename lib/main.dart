@@ -3,6 +3,8 @@ import 'first_demo.dart';
 import 'package:flutter_demo/material_components/material_components.dart';
 import 'package:flutter_demo/layout/layout.dart';
 import 'package:flutter_demo/assets/assets.dart';
+import 'package:flutter_demo/data_access/data_access.dart';
+import 'package:flutter_demo/native_/native_.dart';
 
 void main() => runApp(new MyApp());
 
@@ -50,6 +52,18 @@ class DemoList extends StatelessWidget {
             trailing: new Icon(Icons.arrow_forward),
             onTap: () {
               Navigator.of(context).push(new MaterialPageRoute(builder: (context) => new AssetsDemo()));
+            }),
+        new ListTile(
+            title: new Text("Data Access", style: _biggerFont),
+            trailing: new Icon(Icons.arrow_forward),
+            onTap: () {
+              Navigator.of(context).push(new MaterialPageRoute(builder: (context) => new DataAccessDemo()));
+            }),
+        new ListTile(
+            title: new Text("Native", style: _biggerFont),
+            trailing: new Icon(Icons.arrow_forward),
+            onTap: () {
+              Navigator.of(context).push(new MaterialPageRoute(builder: (context) => new NativeDemo()));
             }),
     ];
 
